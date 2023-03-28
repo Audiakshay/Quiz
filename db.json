@@ -1,0 +1,44 @@
+{
+  "quizData": [
+    {
+      "title": "The Process by which physical certificates are converted into electronic format ?",
+        "A": "Digitalisation",
+        "B": "Materialisation",
+        "C": "Dematerialisation",
+      "answer": "C",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "The number of approved share markets in India?",
+        "A": 19,
+        "B": 23,
+        "C": 26,
+      "answer": "A"
+    },
+    {
+      "id": 3,
+      "title": "When was the National Stock Exchange of India (NSE) established ?",
+        "A": 1992,
+        "B": 1996,
+        "C": 1999,
+      "answer": "A"
+    },
+    {
+      "id": 4,
+      "title": "Where is the NSE (National Stock Exchange of India) headquarter ?",
+        "A": "Pune",
+        "B": "Mumbai",
+        "C": "Chennai",
+      "answer": "B"
+    },
+    {
+      "id": 5,
+      "title": "Which agency is responsible for regulation of stock market in India ?",
+        "A": "SEBI",
+        "B": "NABARD",
+        "C": "RERA",
+      "answer": "A"
+    }
+  ]
+}
