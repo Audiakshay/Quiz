@@ -14,6 +14,13 @@ function Footers() {
       setPages(Pages + 1);
     }
   };
+  const footerButton = () => { 
+    if (Pages === 6) { nav1('/', { replace: true }); 
+    setPages(1); setresult(0); } 
+    pageCount(); 
+    checkResult(); 
+    setOption(''); 
+    if (Pages === 5) { nav('/result', { replace: true }); } }
   return (
     <div className="flex justify-center py-5 gap-16 sm:gap-0 sm:bg-orange-100 bg-white">
       <div className="flex items-center">
@@ -35,7 +42,7 @@ function Footers() {
         )}
       </div>
       <div>
-        <button disabled={!(Option || Pages === 6)} type="button" className="btn disabled:ring-2 disabled:ring-slate-500 disabled:ring-offset-2 ring-2 ring-green-500 ring-offset-2" onClick={() => { if (Pages === 6) { nav1('/', { replace: true }); setPages(1); setresult(0); } pageCount(); checkResult(); setOption(''); if (Pages === 5) { nav('/result', { replace: true }); } }}>
+        <button disabled={!(Option || Pages === 6)} type="button" className="btn disabled:ring-2 disabled:ring-slate-500 disabled:ring-offset-2 ring-2 ring-green-500 ring-offset-2" onClick={footerButton}>
           {Pages < 5 ? 'Submit' : (Pages === 6 ? 'Okay' : 'Finish') }
         </button>
       </div>
