@@ -4,7 +4,7 @@ import { pageContext } from '../../context/pageContext';
 
 function Headers() {
   const { innerwidth, Pages } = useContext(pageContext);
-  const nav = useNavigate();
+  const nav1 = useNavigate();
   return (
     <div>
       <div className="flex my-4 px-8 w-full items-center cursor-default">
@@ -25,7 +25,7 @@ function Headers() {
           </div>
         </div>
         <h1 className="flex-1 text-4xl sm:text-xl text-center font-bold">Quiz #156</h1>
-        <button type="button" onClick={() => nav('/', { replace: true })} className="text-2xl sm:text-xl bg-white px-2 py-2 sm:px-1 sm:py-1 rounded-full">
+        <button type="button" onClick={() => nav1('/', { replace: true })} className="text-2xl sm:text-xl bg-white px-2 py-2 sm:px-1 sm:py-1 rounded-full">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-7 sm:h-5" viewBox="0 96 960 960"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" /></svg>
         </button>
       </div>
